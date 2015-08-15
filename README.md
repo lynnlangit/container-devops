@@ -22,11 +22,14 @@
   * [Compose](https://docs.docker.com/compose/) (define and running multi-container applications)
   * [Machine](https://docs.docker.com/machine/) (automated Docker provisioning)
   * [Swarm](https://docs.docker.com/swarm/) (native clustering for Docker)
+  * [Toolbox](https://www.docker.com/toolbox)(Docker on Mac or Windows)
 * Google GCP 
   * [Compute Engine](https://cloud.google.com/compute/) (PaaS with container managed service)
   * [Kubernetes](http://kubernetes.io/) (orchestration of services running pods of containers)
 * Microsoft Azure
   * [Container Apps](http://azure.microsoft.com/blog/2015/06/23/container-apps-now-available-in-the-azure-marketplace/) (PaaS with container-managed services)
+* Kitematic
+ * [Kitematic](https://github.com/kitematic/kitematic)(Docker container management on Mac or Windows)
 * Red Hat 
   * [Atomic](http://www.projectatomic.io/) (lightweight immutable platform for running containers)
   * [OpenShift](https://www.openshift.com/) (hybrid PaaS based on Docker)
@@ -74,17 +77,15 @@ containers across clusters)
 
 ----------------------------------------------------------------------
 
-##10 Step DevOps Pipeline:
-1. Code & Check-In
-2. Check-Out & Build Code
-3. Unit Test & Quality Control
-4. Package, Version & Archive
-5. Integration Test
-6. Deploy-to-Test Environment
-7. Deploy-to-Pre-Production
-8. Acceptance Test
-9. Deploy-to-Production
-10. Management & Monitoring
+##DevOps Pipeline:
+###Developer
+Code & Check-In > Check-Out & Build Code > Unit Test & QC
+###DevOps
+Package, Version & Archive > Integration Test > Deploy-to-Test Env > Deploy-to-Pre-Prod 
+
+Acceptance Test > Deploy-to-Prod
+
+Manage & Monitor
 
 -----------------------------------------------------------------------
 ##Continuous Delivery has three categories:
@@ -107,8 +108,11 @@ containers across clusters)
 
 ####Source Code Management
 * GitHub
+ * [GitHub](https://github.com/)
 * AWS
+ * [Code Commit](https://aws.amazon.com/codecommit/)
 * GCP
+ * [Cloud Source Repos](https://cloud.google.com/tools/cloud-repositories/docs/)
 
 ###Continuous Integration (CI, Code Analysis, Testing Frameworks, Build Automation)
 ####Continuous Integration
@@ -137,7 +141,7 @@ containers across clusters)
 * [PhantomJsEnv](https://github.com/Codeception/PhantomJsEnv) (can be run through Docker instead of installed)
 * [RoboCI](https://github.com/Codegyre/RoboCI) (aimed to run Travis CI builds locally inside Docker containers)
 
-###Continuous Deployment (Image Registry, Release Automation, Operations Tools)
+###Continuous Deployment (Image Registry, Release Automation, Ops Tools)
 ####Artifact and Image Registry
 * Docker 
   * [Hub](https://hub.docker.com/) (hosted registry service)
