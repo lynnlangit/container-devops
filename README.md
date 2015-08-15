@@ -44,7 +44,7 @@ EngineYard [Deis](http://deis.io/overview/) (open source PaaS for Docker)
 
 Joyent [Triton](https://www.joyent.com/) (elastic container infrastructure)
 
-[Kontena](http://www.kontena.io/) (application containers for masses)
+Kontena [Kontena](http://www.kontena.io/) (application containers for masses)
 
 Google [Compute Engine](https://cloud.google.com/compute/) (PaaS with container managed service)
 
@@ -56,17 +56,17 @@ HashiCorp [Consul](https://www.consul.io/) (finds and configure infrastructure s
 
 IBM [Bluemix](https://console.ng.bluemix.net/) (hybrid PaaS based upon CloudFoundry and Docker)
 
-[Jelastic](https://jelastic.com/docker/) (multi-container orchestration platform)
+Jelastic [Jelastic](https://jelastic.com/docker/) (multi-container orchestration platform)
 
 Microsoft [Azure](https://azure.microsoft.com/en-us/) (PaaS with container-managed services)
 
 Mesosphere [DCOS] (https://mesosphere.com/product/) (data center OS works with Docker)
 
-[Nirmata] (http://nirmata.com/tag/docker/) (application deployment and operations with Docker)
+Nirmata [Nirmata] (http://nirmata.com/tag/docker/) (application deployment and operations with Docker)
 
 OpenStack [Nova](https://wiki.openstack.org/wiki/Docker) (launches containers on a massive scale)
 
-[Pertino](http://pertino.com/pertino-simplifies-networking-of-docker-containers-across-any-cloud-anywhere) (builds container-level VPC networks)
+Pertino [Pertino](http://pertino.com/pertino-simplifies-networking-of-docker-containers-across-any-cloud-anywhere) (builds container-level VPC networks)
 
 Portworx [PWX](http://portworx.com/products/) (scale out block storage for Docker)
 
@@ -82,11 +82,10 @@ Red Hat [OpenShift](https://www.openshift.com/) (hybrid PaaS based on Docker)
 
 VMware [Photon](https://vmware.github.io/photon/) (lightweight Linux host for containers)
 
-[Weave](http://weave.in/) (creates a network of Docker containers)
+Weave [Weave](http://weave.in/) (creates a network of Docker containers)
 
 ----------------------------------------------------------------------
 
-1st column
 ##DevOps Pipeline:
 1. Author Code & Check-In
 
@@ -111,7 +110,6 @@ VMware [Photon](https://vmware.github.io/photon/) (lightweight Linux host for co
 11. Management & Monitoring
 
 
-2nd Column
 ##Continuous Delivery:
 Continuous Development
 
