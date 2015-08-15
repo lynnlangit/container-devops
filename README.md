@@ -1,8 +1,5 @@
-# container-devops
-
 #How Containers are Disrupting Devops
 >Containers are disrupting DevOps by automating software delivery into easily manageable segments. The DevOps   is an autonomous, recurring process, comprised of continuous development, integration, and deployment. We asked ourselves, “How are containers redefining how DevOps is handled and what vendors and products are leading the change?”
-
 
 ##Containers Make Environments Consistent
 >Containers provide a common set of building blocks that can be reused in any stage of development to recreate identical environments for development, testing, staging, and production. Containers extend the idea of write once; deploy anywhere, to an infrastructure abstraction that application developers can easily consume and operations professionals can predictably manage.
@@ -22,7 +19,7 @@
   * [Compose](https://docs.docker.com/compose/) (define and running multi-container applications)
   * [Machine](https://docs.docker.com/machine/) (automated Docker provisioning)
   * [Swarm](https://docs.docker.com/swarm/) (native clustering for Docker)
-  * [Toolbox](https://www.docker.com/toolbox)(Docker on Mac or Windows)
+  * [Toolbox](https://www.docker.com/toolbox) (Docker on Mac or Windows)
 * Google GCP 
   * [Compute Engine](https://cloud.google.com/compute/) (PaaS with container managed service)
   * [Kubernetes](http://kubernetes.io/) (orchestration of services running pods of containers)
@@ -33,7 +30,6 @@
 * Red Hat 
   * [Atomic](http://www.projectatomic.io/) (lightweight immutable platform for running containers)
   * [OpenShift](https://www.openshift.com/) (hybrid PaaS based on Docker)
-* VMware [Photon](https://vmware.github.io/photon/) (lightweight Linux host for containers)
 
 **Secondary**
 * ActiveState 
@@ -74,37 +70,46 @@ containers across clusters)
   * [RancherOS](http://rancher.com/rancher-os/) (Linux distribution that runs OS as Docker containers) 
 * Weave 
  * [Weave](http://weave.in/) (creates a network of Docker containers)
+* VMware [Photon](https://vmware.github.io/photon/) (lightweight Linux host for containers)
 
 ----------------------------------------------------------------------
 
 ##DevOps Pipeline:
 ###Developer
-Code & Check-In > Check-Out & Build Code > Unit Test & QC
+* Code & Check-In > Check-Out & Build Code > Unit Test & QC
 ###DevOps
-Package, Version & Archive > Integration Test > Deploy-to-Test Env > Deploy-to-Pre-Prod 
-
-Acceptance Test > Deploy-to-Prod
-
-Manage & Monitor
+* Package, Version & Archive > Integration Test > Deploy-to-Test Env > Deploy-to-Pre-Prod 
+* Acceptance Test > Deploy-to-Prod
+* Manage & Monitor
 
 -----------------------------------------------------------------------
 ##Continuous Delivery has three categories:
-1. Continuous Development
-2. Continuous Integration
-3. Continuous Deployment
+1. CD - Continuous Development
+2. CI - Continuous Integration
+3. CDeploy - Continuous Deployment
 
 ----------------------------------------------------------------------
 ###Continuous Development (IDE + Src Code)
 
 ####Developer Workspace
-* [Codenvy] (https://codenvy.com/) (RESTful workspaces built with Docker containers)
-* [Codefresh] (http://codefresh.io/) (NodeJS workspaces built with Docker)
-* Eclipse [Che] (http://www.eclipse.org/che/) (hosted workspaces using containers for microservices)
-* JetBrains [IntelliJ IDEA](https://www.jetbrains.com/idea/) (manages Docker containers from IDE)
-* [Nitrous](https://pro.nitrous.io/?l=1) (Docker containers as workspaces)
-* Progrium [Envy](https://github.com/progrium/envy) (lightweight developer environments)
-* [Vagrant](http://docs.vagrantup.com/v2/provisioning/docker.html) (Docker provisioner)
-* VMware [AppCatalyst](http://blogs.vmware.com/cloudnative/vmware-appcatalyst) (desktop hypervisor optimized for containers)
+* Codenvy
+ * [Codenvy] (https://codenvy.com/) (RESTful workspaces built with Docker containers)
+* Codefresh
+ * [Codefresh] (http://codefresh.io/) (NodeJS workspaces built with Docker)
+* Eclipse 
+ * [Che] (http://www.eclipse.org/che/) (hosted workspaces using containers for microservices)
+* JetBrains 
+ * [IntelliJ IDEA](https://www.jetbrains.com/idea/) (manages Docker containers from IDE)
+* Nitrous
+ * [Nitrous](https://pro.nitrous.io/?l=1) (Docker containers as workspaces)
+* Progrium 
+ * [Envy](https://github.com/progrium/envy) (lightweight developer environments)
+ 
+* Vagrant
+ * [Vagrant](http://docs.vagrantup.com/v2/provisioning/docker.html) (Docker provisioner)
+ * [Vagrant Manager](http://vagrantmanager.com/) (GUI Management Tool)
+* VMware 
+ * [AppCatalyst](http://blogs.vmware.com/cloudnative/vmware-appcatalyst) (desktop hypervisor optimized for containers)
 
 ####Source Code Management
 * GitHub
@@ -143,29 +148,41 @@ Manage & Monitor
 
 ###Continuous Deployment (Image Registry, Release Automation, Ops Tools)
 ####Artifact and Image Registry
+**Primary**
 * Docker 
   * [Hub](https://hub.docker.com/) (hosted registry service)
   * [Trusted Registry](https://docs.docker.com/docker-trusted-registry/) (private dedicated image registry)
 * GCP
  * [Google Container Registry] (https://cloud.google.com/container-registry/) (secure Docker image storage)
 
+**Secondary**
 * JFrog [Artifactory](http://www.jfrog.com/confluence/display/RTF/Docker+Repositories) (doubles as Docker and artifact registry)
 * [Quay.io](https://quay.io/plans/) (secure hosting for Docker registries)
 * [Tutum Registry] (https://support.tutum.co/support/solutions/articles/5000012183-using-tutum-s-private-Docker-image-registry) (private Docker registry)
 
 ####Release Automation
-* Amazon [OpsWorks](http://aws.amazon.com/opsworks/) (application management for container & VM infrastructure)
-* [Ansible](http://www.ansible.com/docker) (playbooks will generate consistent app in containers & VMs)
-* [Chef](https://www.chef.io/solutions/containers/) (container management, provisioning and automation)
-* PuppetLabs [Puppet Forge](https://forge.puppetlabs.com/tags/docker) (Docker management)
-* [Salt](http://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerio.html) (container management, provisioning and automation)
+* Amazon AWS
+ * [OpsWorks](http://aws.amazon.com/opsworks/) (application management for container & VM infrastructure)
+* Ansible
+ * [Ansible](http://www.ansible.com/docker) (playbooks will generate consistent app in containers & VMs)
+* Chef
+ * [Chef](https://www.chef.io/solutions/containers/) (container management, provisioning and automation)
+* PuppetLabs 
+ * [Puppet Forge](https://forge.puppetlabs.com/tags/docker) (Docker management)
+* Salt
+ * [Salt](http://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerio.html) (container management, provisioning and automation)
 
 ####Operations Tools
-* [AppDynamics](http://community.appdynamics.com/t5/eXchange-Community-AppDynamics/Docker-Monitoring-Extension/idi-p/14749) (extension for Docker monitoring)
-* CenturyLink Labs [Panamax] (http://panamax.io/) (tools to visualize & manage containers)
-* [New Relic](https://blog.newrelic.com/2015/05/06/docker-support-2/) (distributed container monitoring and analytics)
-* [Sysdig Cloud] (https://sysdig.com/distributed-container-monitoring-sysdig-cloud-revolution/) (distributed container monitoring)
-* [SignalFx](http://blog.signalfx.com/signalfx-is-proud-to-join-the-docker-ecosystem-technology-partner-program) (streaming analytics of Docker apps)
+* AppDynamics
+ * [AppDynamics](http://community.appdynamics.com/t5/eXchange-Community-AppDynamics/Docker-Monitoring-Extension/idi-p/14749) (extension for Docker monitoring)
+* CenturyLink Labs 
+ * [Panamax] (http://panamax.io/) (tools to visualize & manage containers)
+* New Relic
+ * [New Relic](https://blog.newrelic.com/2015/05/06/docker-support-2/) (distributed container monitoring and analytics)
+* Sysdig Cloud
+ * [Sysdig Cloud] (https://sysdig.com/distributed-container-monitoring-sysdig-cloud-revolution/) (distributed container monitoring)
+* SignalFX
+ * [SignalFx](http://blog.signalfx.com/signalfx-is-proud-to-join-the-docker-ecosystem-technology-partner-program) (streaming analytics of Docker apps)
 
 
 
