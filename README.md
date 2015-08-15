@@ -113,14 +113,14 @@ containers across clusters)
 
 11. Management & Monitoring
 
+-----------------------------------------------------------------------
+##Continuous Delivery has three categories:
+1. Continuous Development
+2. Continuous Integration
+3. Continuous Deployment
 
-##Continuous Delivery:
-* Continuous Development
-* Continuous Integration
-* Continuous Deployment
 ----------------------------------------------------------------------
-
-###Continuous Development
+###Continuous Development (IDE + Src Code)
 ####Developer Workspace
 * [Codenvy] (https://codenvy.com/) (RESTful workspaces built with Docker containers)
 
@@ -139,11 +139,11 @@ containers across clusters)
 * VMware [AppCatalyst](http://blogs.vmware.com/cloudnative/vmware-appcatalyst) (desktop hypervisor optimized for containers)
 
 ####Source Code Management
+* GitHub
+* AWS
+* GCP
 
-AWS
-GCP
-
-###Continuous Integration
+###Continuous Integration (CI, Code Analysis, Testing Frameworks, Build Automation)
 ####Continuous Integration
 * [Drone.io](http://blog.drone.io/2014/2/5/open-source-ci-docker.html) (open source continuous integration built on Docker)
 
@@ -185,7 +185,7 @@ GCP
 * [RoboCI](https://github.com/Codegyre/RoboCI) (aimed to run Travis CI builds locally inside Docker containers)
 
 
-###Continuous Deployment
+###Continuous Deployment (Image Registry, Release Automation, Operations Tools)
 ####Artifact and Image Registry
 * Docker 
   * [Hub](https://hub.docker.com/) (hosted registry service)
