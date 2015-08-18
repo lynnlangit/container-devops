@@ -1,11 +1,11 @@
 #How Containers are Disrupting Devops
->Containers are disrupting DevOps by automating software delivery into easily manageable segments. The DevOps   is an autonomous, recurring process, comprised of continuous development, integration, and deployment. We asked ourselves, “How are containers redefining how DevOps is handled and what vendors and products are leading the change?”
+>...by automating software delivery into easily manageable segments. DevOps is an autonomous, recurring process, comprised of continuous development, integration, and deployment. We asked ourselves, “How are containers redefining how DevOps is handled and what vendors and products are leading the change?”
 
 ##Containers Make Environments Consistent
->Containers provide a common set of building blocks that can be reused in any stage of development to recreate identical environments for development, testing, staging, and production. Containers extend the idea of write once; deploy anywhere, to an infrastructure abstraction that application developers can easily consume and operations professionals can predictably manage.
+>... by providing a common set of building blocks that can be reused in any stage of development to recreate identical environments for development, testing, staging, and production. Containers extend the idea of write once; deploy anywhere, to an infrastructure abstraction that application developers can easily consume and operations professionals can predictably manage.
 
 ##Containers Make Tooling Consistent
->Containers provide a disposable, reusable unit of tooling that can execute a segment of a delivery pipeline. Now, critical code quality, analysis, build, and test functions can be packaged as containers and consistently reused within developer workspaces, continuous integration systems, and release management tools. Service injection into containers allows developers to code more productively and tooling vendors to provide value in every phase of the pipeline.
+>by providing a disposable, reusable unit of tooling that can execute a segment of a delivery pipeline. Now, critical code quality, analysis, build, and test functions can be packaged as containers and consistently reused within developer workspaces, continuous integration systems, and release management tools. Service injection into containers allows developers to code more productively and tooling vendors to provide value in every phase of the pipeline.
 
 ##Container Infrastructure
 
