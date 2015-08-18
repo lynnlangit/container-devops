@@ -77,6 +77,7 @@ containers across clusters)
 ##DevOps Pipeline:
 ###Developer Tasks
 * Code & Check-In > Check-Out & Build Code > Unit Test & QC
+
 ###DevOps Tasks
 * Package, Version & Archive > Integration Test > Deploy-to-Test Env > Deploy-to-Pre-Prod 
 * Acceptance Test > Deploy-to-Prod
