@@ -5,11 +5,11 @@
 >... by providing a common set of building blocks that can be reused in any stage of development to recreate identical environments for development, testing, staging, and production. Containers extend the idea of write once; deploy anywhere, to an infrastructure abstraction that application developers can easily consume and operations professionals can predictably manage.
 
 ##Containers Make Tooling Consistent
->by providing a disposable, reusable unit of tooling that can execute a segment of a delivery pipeline. Now, critical code quality, analysis, build, and test functions can be packaged as containers and consistently reused within developer workspaces, continuous integration systems, and release management tools. Service injection into containers allows developers to code more productively and tooling vendors to provide value in every phase of the pipeline.
+>... by providing a disposable, reusable unit of tooling that can execute a segment of a delivery pipeline. Now, critical code quality, analysis, build, and test functions can be packaged as containers and consistently reused within developer workspaces, continuous integration systems, and release management tools. Service injection into containers allows developers to code more productively and tooling vendors to provide value in every phase of the pipeline.
 
 ##Container Infrastructure
 
-**Primary**
+**Primary Vendors**
 * Amazon AWS 
   * [EC2 Container Service](http://aws.amazon.com/ecs/) (Docker extension tools)
 * Apache 
@@ -31,7 +31,7 @@
   * [Atomic](http://www.projectatomic.io/) (lightweight immutable platform for running containers)
   * [OpenShift](https://www.openshift.com/) (hybrid PaaS based on Docker)
 
-**Secondary**
+**Secondary Vendors**
 * ActiveState 
  * [Stackato](http://www.activestate.com/stackato) (agile PaaS platform optimized for containers)
 * Alpine 
@@ -75,15 +75,15 @@ containers across clusters)
 ----------------------------------------------------------------------
 
 ##DevOps Pipeline:
-###Developer
+###Developer Tasks
 * Code & Check-In > Check-Out & Build Code > Unit Test & QC
-###DevOps
+###DevOps Tasks
 * Package, Version & Archive > Integration Test > Deploy-to-Test Env > Deploy-to-Pre-Prod 
 * Acceptance Test > Deploy-to-Prod
 * Manage & Monitor
 
 -----------------------------------------------------------------------
-##Continuous Delivery has three categories:
+##Continuous Delivery includes three categories:
 1. CD - Continuous Development
 2. CI - Continuous Integration
 3. CDeploy - Continuous Deployment
@@ -91,7 +91,7 @@ containers across clusters)
 ----------------------------------------------------------------------
 ###Continuous Development (IDE + Src Code)
 
-####Developer Workspace
+####Developer Workspace and Management Vendors
 * Codenvy
  * [Codenvy] (https://codenvy.com/) (RESTful workspaces built with Docker containers)
 * Codefresh
@@ -104,14 +104,13 @@ containers across clusters)
  * [Nitrous](https://pro.nitrous.io/?l=1) (Docker containers as workspaces)
 * Progrium 
  * [Envy](https://github.com/progrium/envy) (lightweight developer environments)
- 
 * Vagrant
  * [Vagrant](http://docs.vagrantup.com/v2/provisioning/docker.html) (Docker provisioner)
  * [Vagrant Manager](http://vagrantmanager.com/) (GUI Management Tool)
 * VMware 
  * [AppCatalyst](http://blogs.vmware.com/cloudnative/vmware-appcatalyst) (desktop hypervisor optimized for containers)
 
-####Source Code Management
+####Source Code Management Vendors
 * GitHub
  * [GitHub](https://github.com/)
 * AWS
@@ -148,14 +147,14 @@ containers across clusters)
 
 ###Continuous Deployment (Image Registry, Release Automation, Ops Tools)
 ####Artifact and Image Registry
-**Primary**
+**Primary Vendors**
 * Docker 
   * [Hub](https://hub.docker.com/) (hosted registry service)
   * [Trusted Registry](https://docs.docker.com/docker-trusted-registry/) (private dedicated image registry)
 * GCP
  * [Google Container Registry] (https://cloud.google.com/container-registry/) (secure Docker image storage)
 
-**Secondary**
+**Secondary Vendors**
 * JFrog [Artifactory](http://www.jfrog.com/confluence/display/RTF/Docker+Repositories) (doubles as Docker and artifact registry)
 * [Quay.io](https://quay.io/plans/) (secure hosting for Docker registries)
 * [Tutum Registry] (https://support.tutum.co/support/solutions/articles/5000012183-using-tutum-s-private-Docker-image-registry) (private Docker registry)
